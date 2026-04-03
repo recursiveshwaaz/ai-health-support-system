@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CareConnect - Healthcare Support</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Care4All Healthcare Support</h1>
+<p>Connecting Patients with Volunteers</p>
+</header>
+
+<div class="Main_container">
+    <section class="container">
+
+<h2>Patient Support Form</h2>
+
+<form id="supportForm">
+
+<input type="text" id="name" placeholder="Enter your name" required>
+
+<input type="email" id="email" placeholder="Enter your email" required>
+
+<textarea id="issue" placeholder="Describe your health issue"></textarea>
+
+<button type="submit">Submit Request</button>
+
+</form>
+
+<p id="response"></p>
+
+</section>
+
+
+<section class="container">
+
+<h2>Volunteer Registration</h2>
+
+<form id="volunteerForm">
+
+<input type="text" placeholder="Volunteer Name" required>
+
+<input type="email" placeholder="Volunteer Email" required>
+
+<input type="text" placeholder="Skills (Doctor/Nurse/Helper)">
+
+<button type="submit">Register</button>
+
+</form>
+
+<p id="volunteerResponse"></p>
+
+</section>
+
+
+<section class="container">
+
+<h2>AI FAQ Chatbot</h2>
+
+<input type="text" id="chatInput" placeholder="Ask health related question">
+
+<button onclick="chatbot()">Ask</button>
+
+<p id="chatResponse"></p>
+
+</section>
+
+
+<section class="container">
+
+<h2>Request Summary</h2>
+
+<button onclick="showSummary()">View Total Requests</button>
+
+<p id="summary"></p>
+
+</section>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
